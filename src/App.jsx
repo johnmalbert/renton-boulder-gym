@@ -4,11 +4,12 @@ import Climber from './components/Climber';
 import ProgressNav from './components/ProgressNav';
 import Landing from './sections/Landing';
 import About from './sections/About';
+import Gallery from './sections/Gallery';
 import Membership from './sections/Membership';
 import Location from './sections/Location';
 import Summit from './sections/Summit';
 
-const SECTION_IDS = ['summit', 'location', 'membership', 'about', 'landing'];
+const SECTION_IDS = ['summit', 'location', 'membership', 'gallery', 'about', 'landing'];
 
 export default function App() {
   const [climb, setClimb] = useState(0);          // 0 = bottom (landing), 1 = top (summit)
@@ -72,6 +73,7 @@ export default function App() {
       <Summit />
       <Location />
       <Membership />
+      <Gallery />
       <About />
       <Landing />
     </>

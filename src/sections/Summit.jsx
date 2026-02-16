@@ -36,6 +36,13 @@ export default function Summit() {
           </svg>
         </a>
       </div>
+
+      <button
+        className="downclimb-btn"
+        onClick={() => document.getElementById('landing')?.scrollIntoView({ behavior: 'smooth' })}
+      >
+        ↓ Down-climb
+      </button>
     </Section>
   );
 }
