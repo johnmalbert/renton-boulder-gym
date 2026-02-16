@@ -78,6 +78,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   padding: 5rem 3rem 4rem;
   overflow: hidden;
+  background: var(--c-bg);
 }
 
 .section__inner {
@@ -96,23 +97,23 @@ img { max-width: 100%; display: block; }
   transform: translateY(0);
 }
 
-/* Background image overlay — Landing & About sections */
+/* Fixed background image — visible through Landing & About */
+.bg-image {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url('/background.png') center / cover no-repeat;
+  pointer-events: none;
+}
+
 .section--landing,
 .section--about {
   position: relative;
+  background: transparent;
 }
 
 .section--landing::before,
 .section--about::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('/background.png') center / cover no-repeat;
-  z-index: 0;
-}
-
-.section--landing::after,
-.section--about::after {
   content: '';
   position: absolute;
   inset: 0;

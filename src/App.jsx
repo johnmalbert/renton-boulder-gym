@@ -60,6 +60,7 @@ export default function App() {
 
   return (
     <>
+      <div className="bg-image" />
       <TopBar visible={climb > 0.08} />
       <Climber climb={climb} />
       <ProgressNav

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="40%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#0f7a3a"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5e7eb"/>
+      <stop offset="50%" stop-color="#9ca3af"/>
+      <stop offset="100%" stop-color="#d1d5db"/>
+    </linearGradient>
+  </defs>
+  <!-- Carabiner body — D-shape, flat on right, curved on left -->
+  <path d="
+    M 48 14
+    Q 48 4, 36 4
+    L 20 4
+    Q 4 4, 4 20
+    L 4 44
+    Q 4 60, 20 60
+    L 36 60
+    Q 48 60, 48 50
+  " fill="none" stroke="url(#body)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Gate — silver bar on the straight right side -->
+  <rect x="44" y="18" width="8" height="28" rx="4" fill="url(#gate)" stroke="#9ca3af" stroke-width="0.5"/>
+  <!-- Gate pin/rivet top -->
+  <circle cx="48" cy="20" r="2" fill="#d1d5db" stroke="#6b7280" stroke-width="0.5"/>
+  <!-- Gate pin/rivet bottom -->
+  <circle cx="48" cy="44" r="2" fill="#d1d5db" stroke="#6b7280" stroke-width="0.5"/>
+  <!-- Highlight / shine on curved body -->
+  <path d="M 18 8 Q 8 10, 8 20 L 8 40 Q 8 52, 16 56" fill="none" stroke="#86efac" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Top edge highlight -->
+  <path d="M 22 8 L 34 8" fill="none" stroke="#86efac" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+</svg>
