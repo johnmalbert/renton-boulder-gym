@@ -76,7 +76,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 3rem 4rem;
+  padding: 5rem 1.5rem 4rem;
   overflow: hidden;
   background: var(--c-bg);
 }
@@ -87,6 +87,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 2rem;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s ease, transform 0.7s ease;
@@ -107,13 +108,15 @@ img { max-width: 100%; display: block; }
 }
 
 .section--landing,
-.section--about {
+.section--about,
+.section--gallery {
   position: relative;
   background: transparent;
 }
 
 .section--landing::before,
-.section--about::before {
+.section--about::before,
+.section--gallery::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -169,8 +172,11 @@ img { max-width: 100%; display: block; }
 .feature {
   background: var(--c-surface);
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 1rem;
   text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .feature__icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
@@ -179,7 +185,6 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Gallery ---------- */
 .section--gallery {
-  background: var(--c-bg);
   overflow: hidden;
 }
 
@@ -309,8 +314,11 @@ img { max-width: 100%; display: block; }
   background: var(--c-bg);
   border: 1px solid var(--c-surface2);
   border-radius: 16px;
-  padding: 2rem 1.5rem;
+  padding: 1.75rem 1.25rem;
   text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -382,7 +390,10 @@ img { max-width: 100%; display: block; }
 .info-card {
   background: var(--c-surface);
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 1rem;
+  max-width: 280px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .info-card h3 { margin-bottom: 0.4rem; font-size: 1.1rem; }
@@ -498,8 +509,8 @@ img { max-width: 100%; display: block; }
   position: fixed;
   left: 0.5rem;
   z-index: 80;
-  width: 60px;
-  height: 82px;
+  width: 76px;
+  height: 104px;
   pointer-events: none;
   transition: bottom 0.12s linear;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
@@ -512,7 +523,7 @@ img { max-width: 100%; display: block; }
   .feature-row  { grid-template-columns: repeat(3, 1fr); }
   .pricing-grid { grid-template-columns: repeat(3, 1fr); }
   .info-cards   { grid-template-columns: repeat(3, 1fr); }
-  .climber      { width: 72px; height: 98px; left: 1.5rem; }
+  .climber      { width: 88px; height: 120px; left: 1.5rem; }
 }
 
 /* ============================================================
@@ -524,7 +535,7 @@ img { max-width: 100%; display: block; }
   .section__body { margin-left: auto; margin-right: auto; }
   .price-card ul { text-align: left; }
   .info-card     { text-align: left; }
-  .climber       { width: 84px; height: 115px; left: 2.5rem; }
+  .climber       { width: 100px; height: 137px; left: 2.5rem; }
   .progress-nav  { right: 2rem; gap: 18px; }
   .progress-nav button { width: 14px; height: 14px; }
 }

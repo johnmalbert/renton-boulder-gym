@@ -201,54 +201,54 @@ const ChalkBag = ({ cx, cy }) => (
 
 /* ----- Pose definitions ----- */
 const POSES = [
-  // 0 base
+  // 0 standing at base, arms relaxed at sides
   {
-    root: { x: 40, y: 34 }, headTilt: -5, torsoLean: 0, pelvisTwist: 0,
-    handL: { x: 24, y: 50 }, handR: { x: 56, y: 50 },
-    footL: { x: 32, y: 94 }, footR: { x: 48, y: 94 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 30 }, headTilt: -5, torsoLean: 0, pelvisTwist: 0,
+    handL: { x: 22, y: 56 }, handR: { x: 58, y: 56 },
+    footL: { x: 34, y: 98 }, footR: { x: 46, y: 98 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
-  // 1 crouch / hands low holds
+  // 1 reaching up to first hold, right hand high
   {
-    root: { x: 40, y: 42 }, headTilt: -3, torsoLean: 2, pelvisTwist: 1,
-    handL: { x: 16, y: 32 }, handR: { x: 64, y: 32 },
-    footL: { x: 28, y: 92 }, footR: { x: 52, y: 92 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 32 }, headTilt: 6, torsoLean: 2, pelvisTwist: 2,
+    handL: { x: 18, y: 34 }, handR: { x: 56, y: 14 },
+    footL: { x: 30, y: 96 }, footR: { x: 50, y: 88 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
-  // 2 right hand high
+  // 2 left hand reaching up
   {
-    root: { x: 38, y: 36 }, headTilt: 8, torsoLean: 3, pelvisTwist: 3,
-    handL: { x: 16, y: 28 }, handR: { x: 56, y: 6 },
-    footL: { x: 26, y: 92 }, footR: { x: 54, y: 82 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 30 }, headTilt: -6, torsoLean: -2, pelvisTwist: -2,
+    handL: { x: 24, y: 10 }, handR: { x: 62, y: 32 },
+    footL: { x: 28, y: 86 }, footR: { x: 48, y: 96 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
-  // 3 flag left
+  // 3 flagging left leg, right hand high
   {
-    root: { x: 42, y: 34 }, headTilt: 6, torsoLean: 5, pelvisTwist: 6,
-    handL: { x: 20, y: 22 }, handR: { x: 60, y: 6 },
-    footL: { x: 18, y: 76 }, footR: { x: 50, y: 92 },
-    bendArmL: 1, bendArmR: -1, bendLegL: 1, bendLegR: 1,
+    root: { x: 42, y: 30 }, headTilt: 5, torsoLean: 4, pelvisTwist: 4,
+    handL: { x: 20, y: 26 }, handR: { x: 60, y: 10 },
+    footL: { x: 18, y: 80 }, footR: { x: 48, y: 96 },
+    bendArmL: -1, bendArmR: 1, bendLegL: -1, bendLegR: -1,
   },
-  // 4 left hand high
+  // 4 both hands up, matching on hold
   {
-    root: { x: 42, y: 36 }, headTilt: -8, torsoLean: -3, pelvisTwist: -3,
-    handL: { x: 24, y: 6 }, handR: { x: 64, y: 28 },
-    footL: { x: 26, y: 82 }, footR: { x: 54, y: 92 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 30 }, headTilt: 0, torsoLean: 0, pelvisTwist: 0,
+    handL: { x: 32, y: 8 }, handR: { x: 48, y: 8 },
+    footL: { x: 24, y: 92 }, footR: { x: 56, y: 92 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
-  // 5 match / rest
+  // 5 high step, right foot up near hands
   {
-    root: { x: 40, y: 38 }, headTilt: 0, torsoLean: 0, pelvisTwist: 0,
-    handL: { x: 36, y: 16 }, handR: { x: 44, y: 16 },
-    footL: { x: 20, y: 90 }, footR: { x: 60, y: 90 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 30 }, headTilt: 4, torsoLean: 3, pelvisTwist: 3,
+    handL: { x: 18, y: 18 }, handR: { x: 58, y: 14 },
+    footL: { x: 30, y: 96 }, footR: { x: 52, y: 60 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
-  // 6 dyno
+  // 6 topping out, arms pressing down
   {
-    root: { x: 40, y: 34 }, headTilt: 0, torsoLean: 0, pelvisTwist: 0,
-    handL: { x: 18, y: 4 }, handR: { x: 62, y: 4 },
-    footL: { x: 28, y: 74 }, footR: { x: 52, y: 74 },
-    bendArmL: 1, bendArmR: -1, bendLegL: -1, bendLegR: 1,
+    root: { x: 40, y: 28 }, headTilt: 0, torsoLean: 0, pelvisTwist: 0,
+    handL: { x: 20, y: 16 }, handR: { x: 60, y: 16 },
+    footL: { x: 32, y: 88 }, footR: { x: 48, y: 88 },
+    bendArmL: -1, bendArmR: 1, bendLegL: 1, bendLegR: -1,
   },
 ];
 
@@ -274,10 +274,10 @@ function blendPose(p0, p1, t) {
 
 /* ----- Main rig renderer ----- */
 function ClimberRig({ pose }) {
-  const L_UPPER_ARM = 14;
-  const L_FOREARM   = 14;
-  const L_THIGH     = 16;
-  const L_CALF      = 16;
+  const L_UPPER_ARM = 11;
+  const L_FOREARM   = 11;
+  const L_THIGH     = 14;
+  const L_CALF      = 14;
 
   const root = pose.root;
   const shoulders = { x: root.x, y: root.y };
