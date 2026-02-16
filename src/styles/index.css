@@ -99,11 +99,20 @@ img { max-width: 100%; display: block; }
 /* Background image overlay — Landing & About sections */
 .section--landing,
 .section--about {
-  background: url('/background.png') center / 120% auto no-repeat fixed;
+  position: relative;
 }
 
 .section--landing::before,
 .section--about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/background.png') center / cover no-repeat;
+  z-index: 0;
+}
+
+.section--landing::after,
+.section--about::after {
   content: '';
   position: absolute;
   inset: 0;
