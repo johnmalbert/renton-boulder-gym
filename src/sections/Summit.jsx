@@ -28,7 +28,7 @@ export default function Summit() {
             <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13v-3.5a6.37 6.37 0 0 0-.88-.07 6.26 6.26 0 0 0 0 12.51 6.27 6.27 0 0 0 6.27-6.27V9.33a8.28 8.28 0 0 0 3.83.96V6.69z" />
           </svg>
         </a>
-        <a href="mailto:hello@cedarriverbouldering.com" aria-label="Email">
+        <a href="mailto:hello@rentonbouldering.com" aria-label="Email">
           <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor"
             strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="4" width="20" height="16" rx="2" />

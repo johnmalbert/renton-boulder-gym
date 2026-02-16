@@ -12,10 +12,7 @@ export default function Location() {
         </div>
         <div className="info-card">
           <h3>🕐 Hours</h3>
-          <p>
-            Mon – Fri: 6 AM – 10 PM<br />
-            Sat – Sun: 8 AM – 8 PM
-          </p>
+          <p>Every day: 12 PM – 9 PM</p>
         </div>
         <div className="info-card">
           <h3>🅿️ Parking</h3>
@@ -24,7 +21,7 @@ export default function Location() {
       </div>
       <div className="map-embed">
         <iframe
-          title="Cedar River Boulder location"
+          title="Renton Bouldering location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21590.04063157684!2d-122.2171!3d47.4829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906866f04e0001%3A0xc4e0b8a7b7f7d3e0!2sRenton%2C%20WA!5e0!3m2!1sen!1sus!4v1700000000000"
           width="100%"
           height="250"
